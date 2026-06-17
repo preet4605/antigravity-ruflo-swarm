@@ -447,7 +447,7 @@ This registry contains the names and descriptions of all specialized domain agen
 - **risk-metrics-calculation**: Comprehensive risk measurement toolkit for portfolio management, including Value at Risk, Expected Shortfall, and drawdown analysis.
 - **ruby-pro**: You are a Ruby expert specializing in clean, maintainable, and performant Ruby code.
 - **ruflo-memory**: You are operating the Ruflo Self-Learning Loop. Instead of a native vector database, you use Antigravity's file-based storage and `grep_search` to achieve semantic retrieval and persistence.
-- **ruflo-swarm**: You are now operating as the **Swarm Coordinator**. Your primary responsibility is not to write code directly, but to orchestrate a team of specialized subagents to solve the user's task.
+- **ruflo-swarm**: You are now operating as the **Swarm Coordinator**. Your primary responsibility is not to write code directly, but to orchestrate a team of specialized subagents to solve the user's task using Pipeline Templates and Peer-to-Peer messaging.
 - **rust-async-patterns**: Production patterns for async Rust programming with Tokio runtime, including tasks, channels, streams, and error handling.
 - **rust-pro**: You are a Rust expert specializing in modern Rust 1.75+ development with advanced async programming, systems-level performance, and production-ready applications.
 - **saga-orchestration**: Patterns for managing distributed transactions and long-running business processes.

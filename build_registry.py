@@ -2,10 +2,14 @@ import os
 import glob
 import re
 
-skills_dir = os.path.expanduser("~/.agents/skills")
+base_dir = os.path.expanduser("~/.agents")
 registry_file = os.path.expanduser("~/.agents/agent_registry.md")
 
-md_files = glob.glob(os.path.join(skills_dir, "*", "SKILL.md"))
+md_files = []
+for sub_dir in ["skills", "agents", "workflows", "rules"]:
+    # Check for both SKILL.md and AGENT.md just in case
+    md_files.extend(glob.glob(os.path.join(base_dir, sub_dir, "*", "SKILL.md")))
+    md_files.extend(glob.glob(os.path.join(base_dir, sub_dir, "*", "AGENT.md")))
 
 registry_content = "# Agent Registry\n\nThis registry contains the names and descriptions of all specialized domain agents available to the Swarm Coordinator.\n\n"
 
