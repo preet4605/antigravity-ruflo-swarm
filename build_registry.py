@@ -55,7 +55,7 @@ for md_file in sorted(md_files):
     if len(desc) > 300:
         desc = desc[:297] + "..."
         
-    registry_content += f"- **{agent_slug}**: {desc}\n"
+    registry_content += f"- **{agent_slug}** (`{md_file}`): {desc}\n"
 
 with open(registry_file, "w", encoding="utf-8") as f:
     f.write(registry_content)
