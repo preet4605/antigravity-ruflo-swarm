@@ -28,7 +28,7 @@ Before writing code for a new task, use `grep_search` to scan the `learnings/glo
 Monitor the Coder and Reviewer. Note what attempts fail and what solutions finally pass the tests. 
 
 ### 3. DISTILL (End of Task)
-Once the task is verified (Phase 4 of Swarm), run a post-mortem:
+Once the Swarm reaches Phase 5 (Self-Improvement & Memory Update), you MUST run a post-mortem:
 - What worked? What failed?
 - Distill the findings into concise Markdown snippets.
 - Tag each snippet with 2-3 relevant `#hashtags` so `grep_search` can find it easily later.
