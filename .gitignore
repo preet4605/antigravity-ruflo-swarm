@@ -1,0 +1,16 @@
+# Antigravity Swarm Logs and Memory
+.agents/memory/learnings/
+*.log
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+.DS_Store
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+
+# Sensitive environment variables
+.env
