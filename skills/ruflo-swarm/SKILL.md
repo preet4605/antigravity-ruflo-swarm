@@ -47,9 +47,10 @@ You must strictly follow this lifecycle. Do NOT skip any phases.
 ### Phase 4: Finalization
 - **Action:** Once the entire pipeline completes successfully, synthesize the final result and present it to the user.
 
-### Phase 5: Memory Update (MANDATORY)
-- **Action:** Before ending the conversation or marking the task as complete, you MUST use the `ruflo-memory` skill to extract the lessons learned and save them to `~/.agents/memory/learnings/`.
-- **Enforcement:** The task is not finished until the memory file is written.
+### Phase 5: Self-Improvement & Memory Update (MANDATORY)
+- **Action:** You must actively analyze what went wrong, what was inefficient, and what new technical patterns were discovered during this task.
+- **Action:** You MUST use the `ruflo-memory` skill to explicitly write a permanent self-improvement record to `~/.agents/memory/learnings/`.
+- **Enforcement:** If you complete a task without writing a new self-improvement pattern to disk, you have failed the Swarm protocol. Your final message to the user MUST include a "Self-Improvement Summary" detailing exactly what the swarm learned and saved for next time.
 
 ## Rules of Engagement for the Director
 1. **Delegate, Don't Do:** If there is a specialized agent for a task, you must use them. Do not write the code yourself.
