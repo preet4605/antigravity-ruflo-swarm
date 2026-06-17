@@ -8,9 +8,14 @@ TARGET_DIR="$HOME/.agents"
 # Create directories if they don't exist
 mkdir -p "$TARGET_DIR/skills"
 
-# Copy all skills
-cp -r ./skills/* "$TARGET_DIR/skills/"
-echo "✅ Installed 134+ specialized agents and ruflo-swarm core skills."
+# Copy all skills, agents, workflows, and rules
+for dir in skills agents workflows rules; do
+  if [ -d "./$dir" ]; then
+    mkdir -p "$TARGET_DIR/$dir"
+    cp -r ./$dir/* "$TARGET_DIR/$dir/"
+    echo "✅ Installed items from $dir/"
+  fi
+done
 
 # Copy the registry and builder
 cp ./agent_registry.md "$TARGET_DIR/"
