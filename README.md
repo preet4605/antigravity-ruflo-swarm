@@ -18,9 +18,17 @@ This port diverges from the original `claude-flow` in the following ways tailore
 
 ## 📥 Installation
 
-Simply run the installer to automatically copy the skills into your `~/.agents/` folder:
+The fastest way to install the Swarm Coordinator and all 134+ agents into your Antigravity environment is to run this single command in your terminal:
 
 ```bash
+git clone https://github.com/preet4605/antigravity-ruflo-swarm.git /tmp/ruflo-swarm && cd /tmp/ruflo-swarm && chmod +x setup.sh && ./setup.sh && rm -rf /tmp/ruflo-swarm
+```
+
+### Manual Installation
+If you prefer to review the code first:
+```bash
+git clone https://github.com/preet4605/antigravity-ruflo-swarm.git
+cd antigravity-ruflo-swarm
 chmod +x setup.sh
 ./setup.sh
 ```
